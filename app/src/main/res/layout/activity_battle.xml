@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BATTLE ARENA"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#ed184d"
+            android:textColor="#ffffff"
+            android:padding="16dp" />
+
+        <!-- Battle visualization: Lutemon images + arrow -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imageLutemon1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <ImageView
+                android:id="@+id/imageArrow"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="16dp"
+                android:src="@drawable/ic_arrow_right" />
+
+            <ImageView
+                android:id="@+id/imageLutemon2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_launcher_foreground" />
+        </LinearLayout>
+
+        <!-- Spinners -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Lutemon 1" />
+
+        <Spinner
+            android:id="@+id/spinnerLutemon1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Lutemon 2"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerLutemon2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Start Battle Button -->
+        <Button
+            android:id="@+id/buttonStartBattle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="START BATTLE"
+            android:background="#23b901"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <!-- Battle log -->
+        <TextView
+            android:id="@+id/textBattleLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Battle log will appear here..."
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>
+

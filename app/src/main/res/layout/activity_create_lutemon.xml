@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CREATE NEW LUTEMON"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:background="#ed184d"
+            android:textColor="#ffffff"
+            android:padding="16dp" />
+
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/editTextLutemonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:hint="Lutemon Name"
+            android:layout_marginTop="16dp" />
+
+        <!-- Color Selection -->
+        <RadioGroup
+            android:id="@+id/radioGroupColors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/radioWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="White (ATK: 5; DEF: 4; HP: 20)" />
+
+            <RadioButton
+                android:id="@+id/radioGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green (ATK: 6; DEF: 3; HP: 19)" />
+
+            <RadioButton
+                android:id="@+id/radioPink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink (ATK: 7; DEF: 2; HP: 18)" />
+
+            <RadioButton
+                android:id="@+id/radioOrange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orange (ATK: 8; DEF: 1; HP: 16)" />
+
+            <RadioButton
+                android:id="@+id/radioBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black (ATK: 9; DEF: 0; HP: 16)" />
+        </RadioGroup>
+
+        <!-- Preview Image -->
+        <ImageView
+            android:id="@+id/imageViewPreview"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <!-- Create Button -->
+        <Button
+            android:id="@+id/buttonCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:textStyle="bold"
+            android:background="#1e9900"
+            android:textColor="#FFFFFF" />
+
+        <!-- Cancel Button -->
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:background="#e66d00"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>
+
+

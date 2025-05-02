@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LUTEMON WORLD"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#ed184d"
+            android:textColor="#ffffff"
+            android:padding="16dp" />
+
+        <!-- Dynamic stats text -->
+        <TextView
+            android:id="@+id/textHomeStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lutemons at Home"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/buttonViewHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Home"
+            android:background="#e66d00"
+            android:textColor="#ffffff"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/textTrainingStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Training Area"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/buttonTraining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Training Area"
+            android:background="#e66d00"
+            android:textColor="#ffffff"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/textBattleStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Battle Area"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/buttonBattle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Battle Area"
+            android:background="#e66d00"
+            android:textColor="#ffffff"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/buttonStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Statistics"
+            android:background="#e66d00"
+            android:textColor="#ffffff"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/buttonCreateLutemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ Create New Lutemon"
+            android:background="#23b901"
+            android:textColor="#ffffff"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRAINING AREA"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#ed184d"
+        android:textColor="#ffffff"
+        android:padding="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTraining"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:contentDescription="List of Lutemons in training" />
+
+    <Button
+        android:id="@+id/buttonStartTraining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="START TRAINING"
+        android:background="#23b901"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/buttonSendHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEND HOME"
+        android:background="#ff8521"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
